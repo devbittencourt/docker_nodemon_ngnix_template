@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Página</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bem-vindo ao meu app Expresso docker nodemon e ngnix!</h1>
+  <button onclick="alert('Botão 1 clicado')">Botão 1</button>
+  <button onclick="alert('Botão 2 clicado')">Botão 2</button>
+
+  <script>
+    document.querySelectorAll('button').forEach(button => {
+      button.addEventListener('click', () => {
+        console.log(`${button.textContent} foi clicado`);
+      });
+    });
+  </script>
+</body>
+</html>
